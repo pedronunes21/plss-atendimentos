@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply px-[20px] py-[10px];
+    }
+    .title-box {
+        @apply flex items-center justify-start gap-[20px];
+    }
+    .title {
+        @apply text-[32px]
+    }
+
+    .add-icon {
+        @apply h-12 w-12 text-red-600;
+    }
+
+    .action-icon {
+        @apply h-5 w-5 text-red-600;
+    }
+
+    table {
+        @apply table-auto border border-gray-200 my-[10px];
+    }
+    tr {
+        @apply border-b border-gray-200;
+    }
+    th {
+        @apply bg-gray-200 px-[10px] py-[5px] text-left;
+    }
+    td {
+        @apply px-[10px] py-[5px] text-left;
+    }
+
+    input, select {
+        @apply border border-gray-400 rounded-md px-[10px] py-[5px] outline-none max-w-[350px];
+    }
+
+    .button {
+        @apply bg-red-600 rounded-md px-[10px] py-[5px] text-white;
+    }
+
+    .input-div {
+        @apply flex flex-col gap-[5px];
+    }
+
+    .container {
+        @apply flex flex-col gap-[10px];
+    }
+}
